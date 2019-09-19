@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Details</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <nav>
+    <span><a href="menu.html">Back</a></span>
+    <span>Title</span>
+    <span>&nbsp;</span>
+  </nav>
+  <main>
+    <ul id="item"></ul>
+  </main>
+  
+  <script>
+    let xmlhttp = new XMLHttpRequest(),
+      url = "data.json";
+    
+  xmlhttp.onreadystatechange = function() {
+    if ( xmlhttp.readyState === 4 && xmlhttp.status === 200 ) {
+      var menuItems = JSON.parse( xmlhttp.responseText );
+      buildItem( menuItems );
+    }
+  };
+  xmlhttp.open( "GET", url, true );
+  xmlhttp.send();
+  
+  function buildItem( items ) {
+    var output = "",
+        selectedID = localStorage.getItem( "selected" );
+    
+    items.forEach( function( item ) {
+      if ( selectedID == item.id ) {
+          output =  "<li class='item'>" +
+              "<p class='movie'>" + item.movie + "</p>" + 
+              "<img class='pic' src=assets/img/" + item.pic +".png />" +
+              "<p>Released: " + item.released + "</p>" + 
+              "<p>Director: " + item.director + "</p>" + 
+              "<p>Description: " + item.description + "</p>" +
+            "</li>";
+      }
+    });
+    
+    document.getElementById( "item" ).innerHTML = output;
+  }
+  </script>
+
+</body>
+</html>

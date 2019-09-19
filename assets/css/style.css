@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Marck+Script');
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+ 	margin: 0;
+ 	padding: 0;
+}
+
+main {
+  padding: 1em;
+}
+
+nav {
+  padding: .5em;
+  display: flex;
+  align-items: center;
+}
+nav span {
+  display: inline-block;
+  width: 33.3vw;
+}
+nav span:nth-child( 2 ) {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+a {
+  color: #ce2b61e7;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li.item { 
+  border: 2px solid rgb(233, 193, 140);
+  padding: 1em;
+  width: 90%;
+  list-style-type: none;
+  margin: 1em auto 0;
+  text-align: center;
+  background-color: antiquewhite;
+}
+li.item img {
+	padding: 1em;
+  width: 100%;
+  max-width: 500px;
+  max-height: auto;
+}
+
+h1, h2 {
+  font-family: 'Marck Script', cursive;
+}
+
+p.movie {
+  font-family: 'Poiret One', cursive;
+  color: rgb(121, 117, 117);
+  font-weight: bold;
+  font-size: 20px;
+}

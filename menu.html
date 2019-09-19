@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movies</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <nav>
+    <span>&nbsp;</span>
+    <span>LIST OF MOVIES!</span>
+    <span>&nbsp;</span>
+  </nav>
+  <main>
+    <ul id="menu_items"></ul>
+  </main>
+
+  <script>
+    let xhr = new XMLHttpRequest(),
+      url = "data.json";
+
+    xhr.onreadystatechange = function () {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        var menuItems = JSON.parse(xhr.responseText);
+        buildMenu(menuItems);
+      }
+    };
+    xhr.open("GET", url, true);
+    xhr.send();
+
+    function buildMenu(items) {
+      var output = "";
+
+      items.forEach(function (item) {
+        output += "<li class='item'" + "onclick=saveSelection(" + item.id + ");> " +
+          "<img src=assets/img/" + item.pic + ".png />" +
+          "<p class='movie'>" + item.movie + "</p>" +
+          "</li>";
+      });
+
+      document.getElementById("menu_items").innerHTML = output;
+    }
+
+    function saveSelection(sel) {
+      localStorage.setItem("selected", sel);
+      window.open("details.html", "_self");
+    }
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+[
+  {
+    "id": 0,
+    "movie": "Good Will Hunting",
+    "released": 1997,
+    "director": "Gus Van Sant",
+    "description": "Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life.",
+    "pic": "hunting"
+  },
+  {
+    "id": 1,
+    "movie": "The Shawshank Redemption",
+    "released": 1994,
+    "director": "Frank Darabont",
+    "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "pic": "shawshank"
+  },
+  {
+    "id": 2,
+    "movie": "The Godfather",
+    "released": 1972,
+    "director": "Francis Ford Coppola",
+    "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+    "pic": "godfather"
+  },
+  {
+    "id": 3,
+    "movie": "The Dark Knight",
+    "released": 2008,
+    "director": "Christopher Nolan",
+    "description": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham. The Dark Knight must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+    "pic": "knight"
+  },
+  {
+    "id": 4,
+    "movie": "Fight Club",
+    "released": 1999,
+    "director": "David Fincher",
+    "description": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+    "pic": "club"
+  },
+  {
+    "id": 5,
+    "movie": "The Matrix",
+    "released": 1999,
+    "director": "The Wachowski Brothers",
+    "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+    "pic": "matrix"
+  },
+  {
+    "id": 6,
+    "movie": "Back to the Future",
+    "released": 1985,
+    "director": "Robert Zemeckis",
+    "description": "Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown.",
+    "pic": "future"
+  },
+  {
+    "id": 7,
+    "movie": "Raiders of the Lost Ark",
+    "released": 1981,
+    "director": "Steven Spielberg",
+    "description": "In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before Adolf Hitler's Nazis can obtain its awesome powers.",
+    "pic": "raiders"
+  },
+  {
+    "id": 8,
+    "movie": "Django Unchained",
+    "released": 2012,
+    "director": "Quentin Tarantino",
+    "description": "With the help of a German bounty hunter, a freed slave sets out to rescue his wife from a brutal Mississippi plantation owner.",
+    "pic": "django"
+  },
+  {
+    "id": 9,
+    "movie": "3 Idiots",
+    "released": 2009,
+    "director": "Rajkumar Hirani",
+    "description": "Two friends are searching for their long lost companion. They revisit their college days and recall the memories of their friend who inspired them to think differently, even as the rest of the world called them idiots.",
+    "pic": "idiots"
+  }
+]
